@@ -16,14 +16,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 98765 43210"],
+    details: ["+91 98290 32007"],
   },
   {
     icon: Clock,
     title: "Store Hours",
     details: [
-      "Monday - Saturday: 10:00 AM - 8:00 PM",
-      "Sunday: 11:00 AM - 6:00 PM",
+      "Monday - Saturday: 11:00 AM - 9:00 PM",
+      "Sunday: 11:00 AM - 8:00 PM",
     ],
   },
 ]
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <a
-                  href="https://wa.me/919876543210?text=Hello!%20I'm%20interested%20in%20your%20collections%20at%20Paavai."
+                  href="https://wa.me/919829032007?text=Hello!%20I'm%20interested%20in%20your%20collections%20at%20Paavai."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#25D366]/90"
@@ -132,7 +132,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Paavai Boutique Location - Shop No. 68, Bapu Bazar, Jaipur"
+                title="Paavai - Shop No. 68, Bapu Bazar, Jaipur"
               />
             </div>
           </div>

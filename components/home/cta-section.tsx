@@ -45,7 +45,7 @@ export function CTASection() {
         </div>
 
         <p className="mt-8 text-sm text-primary-foreground/60">
-          Open Monday - Saturday: 10:00 AM - 8:00 PM | Sunday: 11:00 AM - 6:00 PM
+          Open Monday - Saturday: 11:00 AM - 9:00 PM | Sunday: 11:00 AM - 8:00 PM
         </p>
       </div>
     </section>

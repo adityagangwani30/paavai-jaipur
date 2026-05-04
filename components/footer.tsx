@@ -77,11 +77,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 shrink-0 text-primary" />
-                <span>+91 98765 43210</span>
+                <span>+91 98290 32007</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <span>Mon - Sat: 10:00 AM - 8:00 PM<br />Sunday: 11:00 AM - 6:00 PM</span>
+                <span>Mon - Sat: 11:00 AM - 9:00 PM<br />Sunday: 11:00 AM - 8:00 PM</span>
               </li>
             </ul>
           </div>
