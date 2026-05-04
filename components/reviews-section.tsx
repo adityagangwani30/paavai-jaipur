@@ -59,20 +59,20 @@ export function ReviewsSection() {
   }
 
   return (
-    <section className="bg-card py-16">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-card py-14 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-12 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div>
             <p className="mb-2 text-sm font-medium uppercase tracking-[0.3em] text-primary">
               Customer Reviews
             </p>
-            <h2 className="font-serif text-2xl font-bold text-foreground md:text-3xl">
+            <h2 className="font-serif text-xl font-bold text-foreground sm:text-2xl md:text-3xl">
               What People Say About Us
             </h2>
           </div>
           <Button
             onClick={() => setShowForm(!showForm)}
-            className="rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90"
+            className="min-h-11 w-full rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90 sm:w-auto"
           >
             {showForm ? "Cancel" : "Leave a Review"}
           </Button>
@@ -82,7 +82,7 @@ export function ReviewsSection() {
         {showForm && (
           <form
             onSubmit={handleSubmit}
-            className="mb-12 rounded-2xl bg-background p-6 shadow-sm"
+            className="mb-12 rounded-2xl bg-background p-4 shadow-sm sm:p-6"
           >
             <h3 className="mb-6 font-serif text-xl font-semibold text-foreground">
               Share Your Experience
@@ -113,7 +113,7 @@ export function ReviewsSection() {
                       key={star}
                       type="button"
                       onClick={() => setFormData({ ...formData, rating: star })}
-                      className="focus:outline-none"
+                      className="rounded-sm p-1 focus:outline-none"
                     >
                       <Star
                         className={`h-8 w-8 transition-colors ${
@@ -144,7 +144,7 @@ export function ReviewsSection() {
 
               <Button
                 type="submit"
-                className="rounded-full bg-primary px-8 text-primary-foreground hover:bg-primary/90"
+                className="min-h-11 w-full rounded-full bg-primary px-8 text-primary-foreground hover:bg-primary/90 sm:w-auto"
               >
                 Submit Review
               </Button>

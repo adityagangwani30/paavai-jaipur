@@ -61,15 +61,15 @@ export default function CollectionsPage() {
   return (
     <div className="pt-24">
       {/* Hero */}
-      <section className="bg-card py-16">
-        <div className="mx-auto max-w-7xl px-6 text-center">
+      <section className="bg-card py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
             Our Collections
           </p>
-          <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="text-balance">Explore Our Curated Selection</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">
             Each piece in our collection is handpicked for its quality, craftsmanship, 
             and authentic Jaipuri heritage. Discover something beautiful today.
           </p>
@@ -77,9 +77,9 @@ export default function CollectionsPage() {
       </section>
 
       {/* Collections */}
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="space-y-24">
+      <section className="py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="space-y-16 sm:space-y-20 lg:space-y-24">
             {collections.map((collection, index) => (
               <div
                 key={collection.id}
@@ -103,11 +103,11 @@ export default function CollectionsPage() {
                       Collection {String(index + 1).padStart(2, "0")}
                     </div>
                     
-                    <h2 className="mt-6 font-serif text-3xl font-bold text-foreground md:text-4xl">
+                    <h2 className="mt-6 font-serif text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
                       {collection.title}
                     </h2>
 
-                    <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+                    <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
                       {collection.description}
                     </p>
 
@@ -125,9 +125,9 @@ export default function CollectionsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-muted py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="font-serif text-2xl font-bold text-foreground md:text-3xl">
+      <section className="bg-muted py-14 sm:py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <h2 className="font-serif text-xl font-bold text-foreground sm:text-2xl md:text-3xl">
             <span className="text-balance">Want to see more?</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
@@ -136,7 +136,7 @@ export default function CollectionsPage() {
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-8 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
           >
             Visit Our Store
           </a>

@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 
 export function FeaturedSection() {
   return (
-    <section className="bg-card py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-card py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Image Grid */}
           <div className="grid grid-cols-2 gap-4">
@@ -53,7 +53,7 @@ export function FeaturedSection() {
               Why Choose Paavai
             </p>
             
-            <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+            <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
               <span className="text-balance">Authentic Jaipuri Craftsmanship</span>
             </h2>
 
@@ -95,7 +95,7 @@ export function FeaturedSection() {
               </div>
             </div>
 
-            <Button asChild size="lg" className="mt-10 rounded-full bg-primary px-8 text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="lg" className="mt-10 min-h-11 w-full rounded-full bg-primary px-8 text-primary-foreground hover:bg-primary/90 sm:w-auto">
               <Link href="/about">
                 Learn Our Story
               </Link>

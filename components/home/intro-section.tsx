@@ -1,25 +1,25 @@
 export function IntroSection() {
   return (
-    <section className="bg-card py-24">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className="bg-card py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
           Welcome to Paavai
         </p>
         
-        <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+        <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
           <span className="text-balance">Where Tradition Meets Elegance</span>
         </h2>
 
         <div className="mx-auto mt-8 h-px w-24 bg-primary/30" />
 
-        <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-lg">
           Nestled in the heart of Jaipur, Paavai is more than just a boutique — 
           it&apos;s a celebration of Indian craftsmanship. Our carefully curated 
           collection brings together the finest kurtis, sarees, suits, and 
           accessories, each piece embodying the rich heritage of Rajasthani artistry.
         </p>
 
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
           Whether you&apos;re seeking the perfect outfit for a special occasion 
           or adding timeless pieces to your wardrobe, Paavai offers an 
           unforgettable shopping experience rooted in quality and authenticity.

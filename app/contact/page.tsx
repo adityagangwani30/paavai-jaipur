@@ -32,15 +32,15 @@ export default function ContactPage() {
   return (
     <div className="pt-24">
       {/* Hero */}
-      <section className="bg-card py-16">
-        <div className="mx-auto max-w-7xl px-6 text-center">
+      <section className="bg-card py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
             Get in Touch
           </p>
-          <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="text-balance">Visit Our Store</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">
             We&apos;d love to welcome you to Paavai. Come experience our beautiful 
             collection of ethnic wear and receive personalized styling assistance.
           </p>
@@ -48,12 +48,12 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info & Map */}
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-12 lg:grid-cols-2">
             {/* Contact Info */}
             <div>
-              <h2 className="font-serif text-2xl font-bold text-foreground md:text-3xl">
+              <h2 className="font-serif text-xl font-bold text-foreground sm:text-2xl md:text-3xl">
                 Contact Information
               </h2>
               
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   href="https://wa.me/919829032007?text=Hello!%20I'm%20interested%20in%20your%20collections%20at%20Paavai."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#25D366]/90"
+                  className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#25D366]/90 sm:w-auto"
                 >
                   Start Chat
                 </a>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   href="https://maps.app.goo.gl/RcFqsdWz2671kHAfA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                  className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
                 >
                   Open Map
                 </a>
@@ -128,7 +128,8 @@ export default function ContactPage() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.837265943945!2d75.81748397614635!3d26.92389487017205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4c8e3d0d0001%3A0xd1e3c3b3c3b3c3b3!2sShop%20No.%2068%2C%20Bapu%20Bazar%2C%20Pink%20City%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1699000000000"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: "450px" }}
+                style={{ border: 0, minHeight: "320px" }}
+                className="sm:min-h-[450px]"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -143,9 +144,9 @@ export default function ContactPage() {
       <ReviewsSection />
 
       {/* CTA */}
-      <section className="bg-primary py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="font-serif text-2xl font-bold text-primary-foreground md:text-3xl">
+      <section className="bg-primary py-14 sm:py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <h2 className="font-serif text-xl font-bold text-primary-foreground sm:text-2xl md:text-3xl">
             <span className="text-balance">We Look Forward to Meeting You</span>
           </h2>
           <p className="mt-4 text-primary-foreground/80">

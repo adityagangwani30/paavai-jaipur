@@ -23,13 +23,13 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
+    <section className="py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 text-center sm:mb-16">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
             Customer Love
           </p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             <span className="text-balance">What Our Customers Say</span>
           </h2>
         </div>
@@ -38,7 +38,7 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-card p-8 shadow-sm"
+              className="rounded-2xl bg-card p-6 shadow-sm sm:p-8"
             >
               {/* Stars */}
               <div className="flex gap-1">

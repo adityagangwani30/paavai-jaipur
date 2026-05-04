@@ -35,7 +35,7 @@ export function Navbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="group">
           <h1 className="font-serif text-2xl font-bold tracking-wide text-primary md:text-3xl">
@@ -47,7 +47,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -66,7 +66,7 @@ export function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
@@ -77,11 +77,11 @@ export function Navbar() {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 top-[72px] z-40 bg-background/98 backdrop-blur-lg transition-transform duration-300 md:hidden",
+          "fixed inset-0 top-[72px] z-40 bg-background/98 backdrop-blur-lg transition-transform duration-300 lg:hidden",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="flex flex-col items-center gap-6 pt-12">
+        <div className="flex flex-col items-center gap-6 px-4 pt-10 sm:px-6 sm:pt-12">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -92,7 +92,7 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="mt-4 rounded-full bg-primary px-8 py-6 text-lg text-primary-foreground hover:bg-primary/90">
+          <Button asChild className="mt-4 min-h-11 w-full rounded-full bg-primary px-8 py-6 text-lg text-primary-foreground hover:bg-primary/90 sm:w-auto">
             <Link href="/contact" onClick={() => setIsOpen(false)}>
               Visit Store
             </Link>

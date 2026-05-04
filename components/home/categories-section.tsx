@@ -43,13 +43,13 @@ const categories = [
 
 export function CategoriesSection() {
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
+    <section className="py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 text-center sm:mb-16">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
             Our Collections
           </p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             <span className="text-balance">Explore by Category</span>
           </h2>
         </div>
@@ -69,10 +69,10 @@ export function CategoriesSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
               
-              <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                 <div className="flex items-end justify-between">
                   <div>
-                    <h3 className="font-serif text-2xl font-bold text-white">
+                    <h3 className="font-serif text-xl font-bold text-white sm:text-2xl">
                       {category.title.replace("&apos;", "'")}
                     </h3>
                     <p className="mt-1 text-sm text-white/80">
