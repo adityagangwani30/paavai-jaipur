@@ -5,6 +5,7 @@ import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { WhatsAppButton } from '@/components/whatsapp-button'
+import { CallButton } from '@/components/call-button'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <CallButton floating />
         <WhatsAppButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
-import { MapPin, Phone, Clock, MessageCircle, Navigation } from "lucide-react"
+import { MapPin, Phone, Clock, Navigation } from "lucide-react"
 import { ReviewsSection } from "@/components/reviews-section"
+import { WhatsAppButton } from "@/components/whatsapp-button"
+import { CallButton } from "@/components/call-button"
+import { STORE_PHONE_DISPLAY } from "@/lib/contact"
 
 export const metadata: Metadata = {
   title: "Contact Us | Paavai Jaipur - Bapu Bazar",
@@ -16,7 +19,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 98290 32007"],
+    details: [STORE_PHONE_DISPLAY],
   },
   {
     icon: Clock,
@@ -78,8 +81,8 @@ export default function ContactPage() {
               {/* WhatsApp CTA */}
               <div className="mt-12 rounded-2xl bg-[#25D366]/10 p-6">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366]">
-                    <MessageCircle className="h-6 w-6 text-white" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white">
+                    <WhatsAppButton floating={false} iconOnly className="h-auto min-h-0 bg-transparent p-0 shadow-none hover:bg-transparent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Chat with Us</h3>
@@ -88,14 +91,23 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-                <a
-                  href="https://wa.me/919829032007?text=Hello!%20I'm%20interested%20in%20your%20collections%20at%20Paavai."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#25D366]/90 sm:w-auto"
-                >
-                  Start Chat
-                </a>
+                <WhatsAppButton floating={false} label="Start Chat" className="mt-4 min-h-11 w-full sm:w-auto" />
+              </div>
+
+              {/* Call CTA */}
+              <div className="mt-8 rounded-2xl bg-primary/10 p-6">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary">
+                    <Phone className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Call the Store</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Speak to our team instantly for quick assistance.
+                    </p>
+                  </div>
+                </div>
+                <CallButton className="mt-4 min-h-11 w-full sm:w-auto" />
               </div>
 
               {/* Get Directions */}
